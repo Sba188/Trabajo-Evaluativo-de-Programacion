@@ -30,6 +30,10 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   exports: [
+    IniciosesionComponent,
+    RegistroComponent,
+    AutentificacionRoutingModule,
+    //material
     MatIconModule,
     MatInputModule,
     MatFormFieldModule,

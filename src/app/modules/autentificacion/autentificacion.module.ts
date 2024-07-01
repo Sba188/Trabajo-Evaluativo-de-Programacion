@@ -6,6 +6,15 @@ import { IniciosesionComponent } from './page/iniciosesion/iniciosesion.componen
 import { RegistroComponent } from './page/registro/registro.component';
 
 
+//componentes de angular material 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     IniciosesionComponent,
@@ -13,7 +22,19 @@ import { RegistroComponent } from './page/registro/registro.component';
   ],
   imports: [
     CommonModule,
-    AutentificacionRoutingModule
+    AutentificacionRoutingModule,
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    FormsModule
+  ],
+  exports: [
+    MatIconModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    FormsModule
   ]
 })
 export class AutentificacionModule { }

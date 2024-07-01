@@ -1,3 +1,29 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+     /* Encasula a pantallas de celular  */
+     @media (min-width: 300px) and (max-width: 700px){
+      mat-toolbar{
+        background-color: blueviolet;
+      }
+  
+      #menuIniccio{
+        display: none;
+      }
+  
+      #menuProducto{
+        display: none;
+      }
+    }
+    /* Encapsula a pantallas mas grandes como una tele */
+    @media (min-width: 700px){
+      mat-toolbar{
+        background-color: brown;
+      }
+  
+      #menuSecciiones{
+        display: none;
+      }
+  
+    }

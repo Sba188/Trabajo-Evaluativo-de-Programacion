@@ -47,7 +47,7 @@ export class RegistroComponent {
     .then(res=>{
       alert("Se pudo registrar con exito :)")
       //el meotodo navigate nos redirecciona al inicio
-      this.servicioRutas.navigate(['/inicio'])
+      this.servicioRutas.navigate(['/Inicio'])
     })
     // el metodo catch captura una falla y lo convierte en un error cuando la promesa sale mal 
     .catch(error=>{

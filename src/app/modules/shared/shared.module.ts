@@ -37,7 +37,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    MatMenuModule,AppRoutingModule
+    MatMenuModule,
+    AppRoutingModule
 
   ]
 })

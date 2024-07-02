@@ -40,7 +40,7 @@ export class IniciosesionComponent {
       .then((res) => {
         alert('Se pudo ingresar con exito !!!! :)');
 
-        this.servicioRutas.navigate(['/inicio']);
+        this.servicioRutas.navigate(['/Inicio']);
       })
       .catch((err) => {
         alert('hubo un error al iniciar sesión:(' + err);

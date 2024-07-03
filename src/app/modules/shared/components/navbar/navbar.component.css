@@ -27,3 +27,23 @@
       }
   
     }
+
+    .imagens {
+      max-width: 80px; /* Ajusta este valor según el tamaño deseado */
+      height: auto; /* Mantiene la proporción de la imagen */
+      display: block; /* Elimina cualquier espacio en línea */
+      margin: auto; /* Centra la imagen horizontalmente */
+  }
+  
+  @media (max-width: 768px) {
+      .imagens {
+          max-width: 75px; /* Tamaño reducido para dispositivos más pequeños */
+      }
+  }
+  
+  @media (max-width: 480px) {
+      .imagens {
+          max-width: 50px; /* Tamaño aún más pequeño para dispositivos muy pequeños */
+      }
+  }
+  

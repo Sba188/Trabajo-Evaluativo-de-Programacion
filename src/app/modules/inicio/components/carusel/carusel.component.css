@@ -1,0 +1,21 @@
+.custom-carousel {
+    max-width: 85%; /* Ajusta el carrusel a la mitad de su tamaño */
+    margin: auto; /* Centra el carrusel horizontalmente */
+}
+
+.custom-carousel .carousel-inner img {
+    width: 100%; /* Asegura que las imágenes sean responsivas */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .custom-carousel {
+        max-width: auto; /* Ajusta el tamaño para dispositivos medianos */
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-carousel {
+        max-width: 100%; /* Ajusta el tamaño para dispositivos pequeños */
+    }
+}

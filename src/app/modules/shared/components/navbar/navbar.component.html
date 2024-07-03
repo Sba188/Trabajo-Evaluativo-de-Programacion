@@ -1,20 +1,23 @@
 <mat-toolbar>
     <!--menu desplegable para cuando la pantalla sea mas chiquita,se va a mostrar cuando sea <700 px -->
-    <button id="menuSecciiones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion" >
+    <button id="menuSecciiones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion">
         <mat-icon>menu</mat-icon>
     </button>
-    
+
     <mat-menu #seccion="matMenu">
-     <button mat-menu-item routerLink="/inicio">Inicio</button>
-     <button mat-menu-item [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+        <button mat-menu-item routerLink="/Inicio">Inicio</button>
+        <button mat-menu-item [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
     </mat-menu>
-  
+
     <!--esto se va a mostrar cuando la pantalla sea mayor a 700 pixeles -->
     <!-- Botón para la vista de inicio-->
+    <span><img
+            src="https://static1.squarespace.com/static/525f12ace4b09f9731f53fa5/t/63a529a8c3003417351bef5f/1685416116960/"
+            alt="" class="imagens"></span>
     <button mat-button id="menuIniccio" routerLink="/Inicio">Inicio</button>
-  
-  
-  
+
+
+
     <span class="example-spacer"></span>
     <!--Inicio de sesuib y el registro de un nuevo usuario-->
     <button mat-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
@@ -22,9 +25,9 @@
         <button mat-menu-item routerLink="/Registro">Registro</button>
         <button mat-menu-item routerLink="/inicio-sesion">Iniciar Sesión</button>
     </mat-menu>
-  <!--carrito-->
+    <!--carrito-->
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>shopping_cart</mat-icon>
     </button>
-    
-  </mat-toolbar>
+
+</mat-toolbar>

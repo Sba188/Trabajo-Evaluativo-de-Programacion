@@ -1,48 +1,51 @@
-/* Estilos generales */
+/* Centrar el contenido y hacer responsivo */
 #todo {
-    max-width: 800px; /* Ajusta el ancho máximo según tu preferencia */
-    margin: 0 auto; /* Centra el formulario horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 20px;
-    background-color: #f0f0f0; /* Color de fondo */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
-/* Estilos para los campos de formulario */
-.mat-form-field {
+.conteiner1 {
     width: 100%;
-    margin-bottom: 15px;
+    max-width: 800px; /* Ajusta el tamaño máximo según tus necesidades */
+    margin: auto;
 }
 
-/* Estilos para el botón */
-.boton {
-    display: block;
-    width: 100%;
-    max-width: 200px; /* Ancho máximo del botón */
-    margin: 20px auto 0; /* Margen superior y centrado horizontal */
-}
-
-/* Estilos para los íconos de visibilidad de contraseña */
-.mat-icon {
-    cursor: pointer;
-}
-
-/* Estilos adicionales para mejorar la legibilidad y alineación */
-.mat-hint {
-    font-size: 12px;
-    color: #3f3f3f;
-}
-
-/* Media query para hacer el formulario más responsive */
-@media (max-width: 600px) {
-    .col-6 {
-        width: 100%;
-    }
-}
-
-/* Añadir estilos para centrar verticalmente los campos de formulario */
 .row2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
+
+.titul {
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.boton {
+    margin-top: 20px;
+}
+
+/* Estilos para ajustar a una columna en dispositivos pequeños */
+@media (max-width: 768px) {
+    .col-md-6,
+    .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
